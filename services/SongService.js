@@ -14,7 +14,7 @@ export class SongService {
    */
   create = (song) => {
 
-    let url = '/song/';
+    let url = '/songs/';
     let options = {
       method: 'POST',
       headers: {
@@ -79,7 +79,7 @@ export class SongService {
    */
   get = (id) => {
     let myHeaders = new Headers();
-    let url = `/song/${id}`;
+    let url = `/songs/${id}`;
     let options = {
       method: 'GET',
       headers: myHeaders
@@ -105,7 +105,7 @@ export class SongService {
    * 
    */
   delete = (id) => {
-    let url = '/song/' + id;
+    let url = '/songs/' + id;
     let myHeaders = new Headers();
     let options = {
       method : 'DELETE', 
@@ -127,7 +127,7 @@ export class SongService {
 
 
   update = (tmpSong) => {
-      let url = '/song/' + tmpSong._id;
+      let url = '/songs/' + tmpSong._id;
       let options = {
         method: 'PUT',
         headers: {
